@@ -1,0 +1,23 @@
+<section class="container fluid mt-5 texto">
+<h1 class="text-center">Personajes de Harry Potter</h1>
+<div class="table-responsive p-5 m-5">
+    <table class="table table-bordered border-dark table-sm table-striped table-hover">
+        <thead>
+            <tr>
+                <th><h2>Name</h2></th>
+                <th><h2>Location</h2></th>
+                <th><h2>House</h2></th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @characters.each do |character| %>
+            <tr>
+                <td><h4><%= character.name %></h4></td>
+                <td><h4><%= character.location %></h4></td>
+                <td><h4><%= character.house %></h4></td>
+            </tr>
+            <% end %>
+        </tbody>
+    </table>
+</div>
+</section>
